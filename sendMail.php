@@ -1,13 +1,13 @@
 <?php
 // multiple recipients
-$to  = 'fish444555@gmail.com' . ', '; // note the comma
-$to .= 'fish444555@gmail';
+// $to  = 'fish444555@gmail.com' . ', '; // note the comma
+// $to .= 'fish444555@gmail';
 
 // subject
 $subject = 'Birthday Reminders for August';
 
 echo "<pre>";
-$val = $_POST['username'];
+$to = $_POST['email'];
 echo $val;
 echo "</pre>"
 echo $to;
@@ -51,5 +51,5 @@ $headers .= 'Cc: birthdayarchive@example.com' . "\r\n";
 $headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
 
 // Mail it
-// mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers);
 ?>
