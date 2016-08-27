@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<div class="container">
+		<!-- <h2>Image</h2>
+		<p>The .img-responsive class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p> -->
+		<img class="img-responsive" src="imgs/2222.jpeg" alt="Chania" width="1200" height="190">
+	</div>
+
+
+	<!-- http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_button_group_justified&stacked=h -->
+	<!-- <div class="container">
+		<h2>Justified Button Groups</h2>
+		<div class="btn-group btn-group-justified">
+			<a href="#" class="btn btn-primary">Apple</a>
+			<a href="#" class="btn btn-primary">Apple2</a>
+			<a href="#" class="btn btn-primary">Samsung</a>
+			<a href="#" class="btn btn-primary">Sony</a>
+		</div>
+	</div>
+-->
+<!-- http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+	<!-- <div class="container">
+		<div class="row">
+			<div class="span6 offset3">
+				<nav class="navbar navbar-default ">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#">WebSiteName</a>
+						</div>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Page 1</a></li>
+							<li><a href="#">Page 2</a></li>
+							<li><a href="#">Page 3</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div> -->
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="span6 offset3">
+				<nav class="navbar navbar-default span6 offset3">
+					<div class="container">
+						<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">blossom</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Home</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Page 1-1</a></li>
+										<li><a href="#">Page 1-2</a></li>
+										<li><a href="#">Page 1-3</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Page 2</a></li>
+								<li><a href="#">Page 3</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- http://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+	<div class="container">
+		<br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+<!--       <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="3"></li> -->
+</ol>
+
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+	<div class="item active">
+		<img src="imgs/111.jpg" alt="Chania" width="1500" height="100">
+		<div class="carousel-caption">
+			<h3>Forest</h3>
+			<p>Beatiful Forest in world.</p>
+		</div>
+	</div>
+
+	<div class="item">
+		<img src="imgs/333.jpg" alt="Flower" width="1500" height="100">
+		<div class="carousel-caption">
+			<h3>Forest</h3>
+			<p>Beatiful Forest in world.</p>
+		</div>
+	</div>
+
+      <!-- <div class="item">
+        <img src="imgs/3.jpg" alt="Flower" width="1500" height="100">
+    </div> -->
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Column 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...afdasf</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Column 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Column 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		</div>
+	</div>
+</div>
+
+<!-- http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pagination_active&stacked=h -->
+<div class="container">
+	<h2>Pagination - Active State</h2>
+	<p>Add class .active to let the user know which page he/she is on:</p>
+	<ul class="pagination">
+		<!-- http://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp -->
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="#">DESIGN STTM</a></li>
+			<li><a href="#">TRANSGENIC LINES</a></li>
+			<li><a href="#">JBROWSE</a></li>
+			<li><a href="#">DOCUMENTATION</a></li>
+			<li><a href="#">MY ACCOUNT</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+	</div>
+
+		<!-- <div class="jumbotron text-center">
+			<h1>My First Bootstrap Page</h1>
+			<p>Resize this responsive page to see the effect!</p>
+		</div> -->
+
+		<!-- http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_button_group_justified&stacked=h -->
+<!-- <div class="container">
+  <h2>Button Group</h2>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+</div>
+-->
+
+
+
+<!-- http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_tabs_dynamic&stacked=h -->
+
+<div class="container">
+	<h2>Dynamic Tabs</h2>
+	<ul class="nav nav-pills">
+		<li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+ <!--  <ul class="nav nav-tabs">
+ <li class="active"><a data-toggle="tab" href="#home">Home</a></li> -->
+ <li><a data-toggle="tab" href="#menu1">DESIGN STTM</a></li>
+ <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+ <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+</ul>
+
+<div class="tab-content">
+	<div id="home" class="tab-pane fade in active">
+		<h3>Targeting Small RNAs for Destruction in Crops by Short Tandem Target Mimic (STTM) </h3>
+		<p>
+			This project aims to develop microRNA (miRNA) knockdown populations in selected crops using our recently developed small tandem target mimic (STTM) technology. This is the first attempt to systematically generate such genetic resources for the plant community, representing a critical step towards comprehensive characterization of miRNA functions. We will further use these mutant populations to investigate the functional conservation and diversification of highly conserved plant miRNAs, and to study the regulatory role of miRNAs in plant-microbe interactions. Hundreds to thousands of miRNAs have been identified from dozens of plant species including agriculturally important crops such as rice, maize, wheat, and soybean. However, their roles in plant development and response against various pathogens and other stresses are largely unknown. The STTM technology is a powerful tool that can robustly trigger the degradation of specific miRNAs in plants, making it possible to dissect miRNA functions. Here, we propose to systemically silence miRNAs in crops by STTM. These miRNA knockdown libraries will be of great use for understanding miRNA functions and will set up genetic basis for crop improvement. Therefore, it is worth making an effort to explore the following specific aims:</p>
+	</div>
+	<div id="menu1" class="tab-pane fade">
+		<div class="container">
+			<h2>Dynamic Tabs</h2>
+			<ul class="nav nav-pills">
+				<li class="active"><a data-toggle="pill" href="#DesignHome">Login</a></li>
+	 <!--  <ul class="nav nav-tabs">
+	 <li class="active"><a data-toggle="tab" href="#home">Home</a></li> -->
+			 	<li><a data-toggle="tab" href="#DesignRig">Register</a></li>		 
+			</ul>
+
+			<div class="tab-content">
+				<div id="DesignHome" class="tab-pane fade in active">
+					<!-- http://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+					<div class="container">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="email">Email:</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="email" placeholder="Enter email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Password:</label>
+								<div class="col-sm-8">
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label><input type="checkbox"> Remember me</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button type="submit" class="btn btn-default">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="DesignRig" class="tab-pane fade in active">
+					<!-- http://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+					<div class="container">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-sm-2" >Enter username (*):</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="username" placeholder="Enter username">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="email">Email:</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="email" placeholder="Enter email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Password:</label>
+								<div class="col-sm-8">
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label><input type="checkbox"> Remember me</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button type="submit" class="btn btn-default">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+
+
+	
+	<div id="menu2" class="tab-pane fade">
+		<h3>Menu 2</h3>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	</div>
+	<div id="menu3" class="tab-pane fade">
+		<h3>Menu 3</h3>
+		<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	</div>
+			<!-- </div> -->
+		<!-- </div> -->
+</div>
+
+
+			<!-- </div> -->
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- http://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+<!-- <div class="container">
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="email">Email:</label>
+			<div class="col-sm-8">
+				<input type="email" class="form-control" id="email" placeholder="Enter email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="pwd">Password:</label>
+			<div class="col-sm-8">
+				<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<div class="checkbox">
+					<label><input type="checkbox"> Remember me</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+<div id="menu2" class="tab-pane fade">
+	<h3>Menu 2</h3>
+	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+</div>
+<div id="menu3" class="tab-pane fade">
+	<h3>Menu 3</h3>
+	<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+</div>
+</div>
+ -->
+
+
+<div class="container">
+	<h2>Breadcrumbs</h2>
+	<p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>
+	<ul class="breadcrumb">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Private</a></li>
+		<li><a href="#">Pictures</a></li>
+		<li class="active">Vacation</li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+<!-- http://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+<!-- <div class="container">
+	<h2>Horizontal form</h2>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="email">Email:</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="email" placeholder="Enter email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="pwd">Password:</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<div class="checkbox">
+					<label><input type="checkbox"> Remember me</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+		</div>
+	</form>
+</div> -->
+
+<!-- http://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp -->
+<div class="container">
+	<h2>Form control: textarea</h2>
+	<p>The form below contains a textarea for comments:</p>
+	<form>
+		<div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea class="form-control" rows="5" id="comment"></textarea>
+		</div>
+	</form>
+</div>
+
+
+</body>
+</html>
+
