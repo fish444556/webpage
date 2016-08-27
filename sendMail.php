@@ -6,16 +6,20 @@
 // subject
 $subject = 'Birthday Reminders for August';
 
-echo "<pre>";
+// echo "<pre>";
 $to = $_POST['email'];
-echo $val;
-echo "</pre>"
+// echo $val;
+// echo "</pre>";
 echo $to;
 
-echo "<h2>PHP is Fun!</h2>";
-echo "Hello world!<br>";
-echo "I'm about to learn PHP!<br>";
-echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+// $first_name = $_POST['first_name'];
+// $last_name = $_POST['last_name'];
+echo "   Thank you " . $first_name . " " . $last_name . " for your requisition.";
+
+// echo "<h2>PHP is Fun!</h2>" . "fdsfdsfds";
+// echo "Hello world!<br>";
+// echo "I'm about to learn PHP!<br>";
+// echo "This ", "string ", "was ", "made ", "with multiple parameters.";
 
 // message
 $message = '
@@ -51,5 +55,5 @@ $headers .= 'Cc: birthdayarchive@example.com' . "\r\n";
 $headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
 
 // Mail it
-mail($to, $subject, $message, $headers);
+// mail($to, $subject, $message, $headers);
 ?>
