@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<div class="container">
+		<!-- <div class="span2 offset3"> -->
+		<div class="col-sm-offset-4 col-sm-10">
+			<h2>DOCUMENTATION</h2>
+		</div>
+		<strong>BLOSSOM STTM HUB:</strong></br>
+		<p>The Blossom STTM Hub is a tool which designs STTM sequences from miRNA and insert the designed STTM into the required DNA vectors to plot the plasmid map and to get the features and sequencing of the resulting vector. It also display the transgenic lines varying in different characteristics both genotypic and phenotypic. The species mainly under consideration here are rice, maize, arabidopsis and poplar. The customers can purchase the required vectors and plasmids after STTM modification by selecting from the transgenic lines display shown through the Michigan Tech Blossom STTM store.</p></br>
+		<img src="imgs/docImg1.png" alt="Chania" width="1100" height="500">	
+		</br>
+		</br>
+
+		<strong>DESIGN_STTM</strong></br>
+		<strong>STEP 1:</strong></br>
+		</br>
+		<p>The STTM Hub application’s Design_STTM phase first accepts miRNA sequence along with a name from the user. Then, the user is given an option to select a DNA vector sequence from a plausible list. The application is automated to design the STTM sequence using the miRNA input provided by the user. The designed STTM is to be inserted into the DNA vector chosen. The user is then given an option whether to transfer the designed STTM into another binary vector. Based on the selection made, the user is made to proceed to STEP 2.</p></br>
+
+		<img src="imgs/docImg2.png" alt="Chania" width="1100" height="400">	
+		</br>
+		</br>		
+
+		<strong>STEP 2:</strong></br>
+		<p>If the designed sttm vector has to be transferred into another binary vector, the origin sequence must be removed from the initial DNA as the binary vector will also have an origin and the resultant DNA cannot have two origin sequences. The primers used to delete the origin segment are displayed and the user then has to select the binary vector, from a list of available vectors, to which the STTM needs to be transferred. A drop down menu is made available to do the same. In this step, the user can add their own binary vector sequence to which they can transfer the STTM. A link to add a new vector to their personal database is made available to fulfil this function.</p></br>
+		</br>
+		</br>
+
+		<img src="imgs/docImg3.png" alt="Chania" width="1100" height="400">	
+		</br>
+		</br>
+
+		<p>Once the user selects their desired binary vector, the vector sequence dynamically loads and is displayed. Now, enzymes to be used as cutting sites are to be selected by the user. This is the last step before the plasmid map generation.</p></br>
+
+		<p>After all the inputs are provided, a validation check takes place, which verifies for the correctness of all the input sequences and selections. If everything is valid, the STTM Hub tool generates the plasmid map for the resulting vector containing the designed STTM sequence.</p></br>
+
+		<img src="imgs/docImg4.png" alt="Chania" width="800" height="400">	
+
+		</br>
+		</br>
+
+		<strong>PLASMID MAP GENERATION:</strong></br>
+		</br>
+		</br>
+
+		
+		<p>The plasmid map is generated using HTML5 Canvas as the display interface and contains clean labels of all the features, enzymes and the STTM location along with their corresponding positions. Apart from the plasmid map, the resulting vector sequence is also displayed to the user highlighting the STTM sequence specially. A tabular listing of the features and their location in the vector is also displayed. The user is given an option of receiving the PDF report of the generated data through their registered email or other email address</p></br>
+		</br>
+		</br>
+		<img src="imgs/docImg5.png" alt="Chania" width="800" height="400">	
+		</br>
+		</br>
+		<img src="imgs/docImg6.png" alt="Chania" width="800" height="400">	
+		</br>
+		</br>
+		<img src="imgs/docImg7.png" alt="Chania" width="800" height="400">	
+		</br>
+		</br>
+		</div>
+	</div>
+
+
+</br>
+<div class="container">
+  <!-- <h2>Panel Footer</h2> -->
+  <div class="panel panel-default">
+    <!-- <div class="panel-heading">Panel Heading</div> -->
+    <!-- <div class="panel-body">Panel Content</div> -->
+    <!-- <div class="panel-footer" background-color="pink">Panel Footer</div> -->
+        <div class="col-lg-12" style="background-color: #D9DFFC"></br></div>
+        <div class="col-lg-12" style="background-color: #D9DFFC"></br></div>
+        <div class="col-lg-12" style="background-color: #D9DFFC"></br></div>
+      <!-- <div class="panel-body">Panel Content</div> -->
+    </div>
+
+  <!-- </div> -->
+</div>
+
+
+</body>
+</html>
+

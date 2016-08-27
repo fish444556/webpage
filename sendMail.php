@@ -4,18 +4,66 @@
 // $to .= 'fish444555@gmail';
 
 // subject
-$subject = 'Birthday Reminders for August';
 
+require 'pdfcrowd.php';
+require 'PHPMailer/class.phpmailer.php';
+
+try
+{   
+    // create an API client instance
+    $client = new Pdfcrowd("fish444555", "54440c35e4ffb16f059eef5898c7d2da");
+
+    // convert a web page and store the generated PDF into a $pdf variable
+    // $pdf = $client->convertURI('http://www.me.mtu.edu/~jialinl/result.html');
+    // $out_file = fopen("document.pdf", "wb");
+    // echo "create pdf";
+    // echo $client->convertURI('http://www.me.mtu.edu/~jialinl/result.html', $out_file);
+    // fclose($out_file);
+
+    // set HTTP response headers
+    // header("Content-Type: application/pdf");
+    // header("Cache-Control: max-age=0");
+    // header("Accept-Ranges: none");
+    // header("Content-Disposition: attachment; filename=\"google_com.pdf\"");
+
+    
+
+    // send the generated PDF 
+    // echo $pdf;
+}
+catch(PdfcrowdException $why)
+{
+    echo "Pdfcrowd Error: " . $why;
+}
+
+
+
+
+// $subject = 'Birthday Reminders for August';
+// $pdf = $client->convertHtml("<head></head><body>My HTML Layout</body>");
 // echo "<pre>";
 $to = $_POST['email'];
 // echo $val;
 // echo "</pre>";
 echo $to;
 
+$email = new PHPMailer();
+$email->From      = 'test@example.com';
+$email->FromName  = 'fish';
+$email->Subject   = 'Message Subject';
+$email->Body      = "result";
+$email->AddAddress( $to);
+
+$file_to_attach = 'result.pdf';
+
+$email->AddAttachment( $file_to_attach , $out_file );
+
+
 // $first_name = $_POST['first_name'];
 // $last_name = $_POST['last_name'];
 echo "   Thank you " . $first_name . " " . $last_name . " for your requisition.";
 
+$email->Send();
 // echo "<h2>PHP is Fun!</h2>" . "fdsfdsfds";
 // echo "Hello world!<br>";
 // echo "I'm about to learn PHP!<br>";
